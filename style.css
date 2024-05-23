@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
  
 
@@ -27,7 +28,9 @@ body {
 
 .right {
     width: 77vw;
-    background-color: #121212
+    background-color: #121212;
+    margin: 5px 0px;
+    border-radius: 5px;
    
 }
 .home ul li{
@@ -75,6 +78,7 @@ min-height: 75vh;
     font-size: 10px;
     gap:13px;
     bottom:0;
+    padding: 10px 0;
 }
 .footer a{
     color: grey;
@@ -85,10 +89,94 @@ min-height: 75vh;
     padding: 20px;
     margin: 5px;
     border-radius: 7px;
+    background-color: #101010;
    
 
 }
 .nav{
     gap:10px;
    
+}
+.spotifyplaylist{
+    color: white;
+    padding: 15px;
+}
+.card {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+    transition: all .9s;
+     
+}
+.card:hover{
+    background-color: rgb(105, 103, 103);
+    cursor: pointer;
+    --a: 1;
+}
+.cardContainer {
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 70vh; 
+}
+
+
+.spotifyPlaylists h1 {
+    padding: 16px;
+}
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+.card>* {
+    padding-top: 10px;
+}
+.play {
+    width: 28px;
+    height: 28px;
+    background-color: #1fdf64;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 88px;
+    right: 17px;
+    opacity: var(--a);
+    transition: all 1s ease-out;
+}
+.button > *{
+    margin: 0 12px;
+}
+
+.signupbtn {
+    background-color: #121212;
+    color: rgb(156, 148, 148);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.signupbtn:hover {
+    font-size: 17px;
+    color: white
+}
+.loginbtn {
+    background-color: white;
+    border-radius: 21px;
+    color: black;
+    padding: 10px;
+    width: 79px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.loginbtn:hover {
+    font-weight: bold;
+    font-size: 17px;
 }
