@@ -10,6 +10,9 @@
 <body>
   <div class="container flex ">
     <div class="left">
+      <div class="cross">
+        <img class = "invert" src="cross.svg" alt="" class="src">
+      </div>
       <div class="home">
         <div class="logo">
           <img class = "invert" src="logo.svg" alt="" class="src">
@@ -48,10 +51,16 @@
       </div>
       <div class="right">
        <div class="header flex">
+      
         <div class="nav flex">
-          <img class = "invert" src="lessthan.svg" alt="" class="src">
-          <img class = "invert" src="greaterthan.svg" alt="" class="src">   
+          <div class="hamburgerContainer">
+          <img class = "invert hamburger" src="hamburger.svg" alt="" class="src">
+        
+          <img class = "invert low" src="lessthan.svg" alt="" class="src">
+          <img class = "invert low" src="greaterthan.svg" alt="" class="src">
         </div>
+        </div>
+        
         <div class="button ">
           <button class = "signupbtn">Sign up</button>
           <button class = "loginbtn">Log in</button>
@@ -82,15 +91,19 @@
         
        </div>
        <div class="playbar">
-        <div class="seekbar"></div>
+        <div class="seekbar">
         <div class="circle"></div>
+      </div>
+        <div class="abovebar">
         <div class="songinfo"></div>
        <div class="songsbutton">
-        <img src="previous.svg" alt="" class="src">
-        <img src="play.svg" alt="" class="src">
-        <img src="nextsong.svg" alt="" class="src">
+        <img id="previous"src="previous.svg" alt="" class="src">
+        <img id="play"src="play.svg" alt="" class="src">
+        <img id="next" src="nextsong.svg" alt="" class="src">
        </div>
-       <div class="songtime"></div>
+       <div class="songtime">
+       </div>
+      </div>
       </div>
       </div>
            </div>
